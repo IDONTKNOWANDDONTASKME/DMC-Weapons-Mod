@@ -34,7 +34,7 @@ public class DMCWeaponsMod {
 
 	public static final String modid = "dmcweapons";
 	public static final String MODNAME = "Devil May Cry Weapons";
-	public static final String version = "1.0.1a";
+	public static final String version = "1.0.2";
 	
 	@SidedProxy(clientSide = "mod.azure.dmcweapons.proxy.ClientProxy", serverSide = "mod.azure.dmcweapons.proxy.CommonProxy")
     public static CommonProxy proxy;
@@ -61,5 +61,6 @@ public class DMCWeaponsMod {
         MineAndSlashAPI.addCompatibleItem("dmcweapons:rebellion", new SwordConfigItem());
         MineAndSlashAPI.addCompatibleItem("dmcweapons:redqueen", new SwordConfigItem());
         MineAndSlashAPI.addCompatibleItem("dmcweapons:spada", new SwordConfigItem());
+        MineAndSlashAPI.addCompatibleItem("dmcweapons:yamato", new SwordConfigItem());
     }  
 }
