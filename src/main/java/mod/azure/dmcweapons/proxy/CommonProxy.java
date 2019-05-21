@@ -50,6 +50,7 @@ public class CommonProxy {
 			new ItemBaseSword("devilsworddante", 1),
 			new ItemBaseSword("rebellion", 1),
 			new ItemBaseSword("redqueen", 1),
+			new ItemBaseSword("yamato", 1),
 			new ItemBaseSword("spada", 1)
 		    };
 		    public static NonNullList<ItemStack> variantList;

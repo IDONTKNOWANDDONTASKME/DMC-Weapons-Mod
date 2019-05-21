@@ -1,0 +1,26 @@
+# Blender MTL File: 'None'
+# Material Count: 4
+
+newmtl 新規
+Ka 1.000000 1.000000 1.000000
+Kd 0.602353 0.602353 0.602353
+d 1.000000
+map_Kd dmcweapons:items/yamato1
+
+newmtl 材質0
+Ka 1.000000 1.000000 1.000000
+Kd 0.602353 0.602353 0.602353
+d 1.000000
+map_Kd dmcweapons:items/yamato2
+
+newmtl 材質1
+Ka 1.000000 1.000000 1.000000
+Kd 0.602353 0.602353 0.602353
+d 1.000000
+map_Kd dmcweapons:items/yamato1
+
+newmtl 材質2
+Ka 1.000000 1.000000 1.000000
+Kd 0.602353 0.602353 0.602353
+d 1.000000
+map_Kd dmcweapons:items/yamato1
