@@ -1,0 +1,57 @@
+{
+    "forge_marker": 1,
+	
+    "variants": {
+        "type": {
+    	  "1": {
+    		   "model": "dmcweapons:spada.obj"
+    		}
+        }
+	},
+	"defaults" : {
+	
+	"transform": {
+	
+	"thirdperson_righthand": {
+	"rotation": [ 0, 188, 0 ],
+	"translation": [ 0.25, -0.10, -0.20 ],
+	"scale": [ 0.50, 0.50, 0.50 ]
+	},
+	"thirdperson_lefthand": {
+		"rotation": [ 0, 188, 0 ],
+		"translation": [ 0.25, -0.09, 0.30  ],
+		"scale": [ 0.50, 0.50, 0.50 ]
+	},
+	"firstperson_righthand": {
+		"rotation": [ 0, 160, 0 ],
+		"translation": [ 0.00, -0.20, -0.50 ],
+		"scale": [ 0.50, 0.50, 0.50 ]
+	},
+	"firstperson_lefthand": {
+		"rotation": [ 0, 160, 0 ],
+		"translation": [ 0.40, -0.15, -0.30 ],
+		"scale": [ 0.50, 0.50, 0.50 ]
+	},
+	"gui": {
+		"rotation": [ 180, 50, 230 ],
+		"translation": [ -0.10, -0.25, 0.00 ],
+		"scale": [ 0.25, 0.25, 0.25 ]
+	},
+	"head": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"fixed": {
+		"rotation": [ 0, 0, 45 ],
+		"translation": [ 1.25, -0.90, 0.22 ],
+		"scale": [ 0.50, 0.50, 0.50 ]
+	},
+	"ground": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.60, 0.20, 0.60 ],
+		"scale": [ 0.30, 0.30, 0.30 ]
+	}
+	}
+	}
+}

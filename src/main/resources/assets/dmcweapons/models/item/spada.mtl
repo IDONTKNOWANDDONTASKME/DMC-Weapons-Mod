@@ -1,0 +1,8 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl 材質0.006
+Ka 1.000000 1.000000 1.000000
+Kd 0.602353 0.602353 0.602353
+d 1.000000
+map_Kd dmcweapons:items/sparda
