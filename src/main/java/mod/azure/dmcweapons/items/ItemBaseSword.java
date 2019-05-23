@@ -21,7 +21,7 @@ public class ItemBaseSword extends ItemSword implements IMultiType {
 	private final int maxTypes;
 
 	public ItemBaseSword(String name, int maxTypes) {
-		super(EnumHelper.addToolMaterial(name, 1, 0, 4F, (4*2), 4));
+		super(EnumHelper.addToolMaterial(name, 1, 0, 4F, 8, 4));
 		this.maxTypes = maxTypes;
 		this.setTranslationKey(name);
 		this.setRegistryName(new ResourceLocation(DMCWeaponsMod.modid, name));
