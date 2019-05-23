@@ -1,0 +1,20 @@
+{
+  "result": {
+    "item": "dmcweapons:rebellion",
+	"data": 0
+  },
+  "pattern": [
+    " d ",
+    " d ",
+    " e "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "d": {
+      "item": "minecraft:emerald"
+    },
+	"e": {
+      "item": "minecraft:stick"
+    }
+  }
+}

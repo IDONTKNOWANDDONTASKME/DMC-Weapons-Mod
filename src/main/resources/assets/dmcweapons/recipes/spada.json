@@ -1,0 +1,20 @@
+{
+  "result": {
+    "item": "dmcweapons:spada",
+	"data": 0
+  },
+  "pattern": [
+    " d ",
+    " d ",
+    " e "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "d": {
+      "item": "minecraft:netherbrick"
+    },
+	"e": {
+      "item": "minecraft:stick"
+    }
+  }
+}
