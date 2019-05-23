@@ -3,6 +3,7 @@
         "modid": "dmcweapons",
         "name": "Devil May Cry Weapons",
         "description": "Adds Devil May Cry Weapons into Minecraft",
+		"version": "${version}",
         "mcversion": "${mcversion}",
         "url": "https://minecraft.curseforge.com/projects/devil-may-cry-weapons",
         "authorList": [
@@ -10,8 +11,8 @@
         ],
         "credits": "",
         "logoFile": "pack.png",
-        "requiredMods": [ "mmorpg" ],
-        "dependencies": [ "mmorpg", "forge" ],
+        "requiredMods": [ ],
+        "dependencies": [ "forge" ],
         "useDependencyInformation": "true"
     }
 ]
