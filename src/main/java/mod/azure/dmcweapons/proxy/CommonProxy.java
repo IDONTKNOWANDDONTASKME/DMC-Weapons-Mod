@@ -1,6 +1,7 @@
 package mod.azure.dmcweapons.proxy;
 
 import mod.azure.dmcweapons.DMCWeaponsMod;
+import mod.azure.dmcweapons.items.ItemBaseGun;
 import mod.azure.dmcweapons.items.ItemBaseSword;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -51,7 +52,8 @@ public class CommonProxy {
 			new ItemBaseSword("rebellion", 1),
 			new ItemBaseSword("redqueen", 1),
 			new ItemBaseSword("yamato", 1),
-			new ItemBaseSword("spada", 1)
+			new ItemBaseSword("spada", 1),
+			new ItemBaseGun("coyote-a", 1)
 		    };
 		    public static NonNullList<ItemStack> variantList;
 }
