@@ -59,12 +59,12 @@ public class DMCWeaponsMod {
     public void postInit(FMLPostInitializationEvent e) {
         proxy.postInit();
         if(Loader.isModLoaded("mmorpg")) {
-        	MineAndSlashAPI.addCompatibleItem("dmcweapons:devilsworddante", new ConfigItem());
-            MineAndSlashAPI.addCompatibleItem("dmcweapons:rebellion", new ConfigItem());
-            MineAndSlashAPI.addCompatibleItem("dmcweapons:redqueen", new ConfigItem());
-            MineAndSlashAPI.addCompatibleItem("dmcweapons:spada", new ConfigItem());
-            MineAndSlashAPI.addCompatibleItem("dmcweapons:yamato", new ConfigItem());
-            MineAndSlashAPI.addCompatibleItem("dmcweapons:coyote-a", new ConfigItem());
+        	MineAndSlashAPI.addCompatibleItem("dmcweapons:devilsworddante", new SwordConfigItem());
+            MineAndSlashAPI.addCompatibleItem("dmcweapons:rebellion", new SwordConfigItem());
+            MineAndSlashAPI.addCompatibleItem("dmcweapons:redqueen", new SwordConfigItem());
+            MineAndSlashAPI.addCompatibleItem("dmcweapons:spada", new SwordConfigItem());
+            MineAndSlashAPI.addCompatibleItem("dmcweapons:yamato", new SwordConfigItem());
+            MineAndSlashAPI.addCompatibleItem("dmcweapons:coyote-a", new BowConfigItem());
 		}
     }  
 }
