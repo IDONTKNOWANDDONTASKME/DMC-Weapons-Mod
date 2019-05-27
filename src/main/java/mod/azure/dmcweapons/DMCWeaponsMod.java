@@ -3,10 +3,6 @@ package mod.azure.dmcweapons;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.robertx22.api.MineAndSlashAPI;
-import com.robertx22.config.non_mine_items.configitem_templates.weapons.BowConfigItem;
-import com.robertx22.config.non_mine_items.configitem_templates.weapons.SwordConfigItem;
-
 import mod.azure.dmcweapons.proxy.CommonProxy;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
