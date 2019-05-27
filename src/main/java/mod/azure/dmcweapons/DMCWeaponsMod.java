@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.robertx22.api.MineAndSlashAPI;
-import com.robertx22.config.non_mine_items.ConfigItem;
+import com.robertx22.config.non_mine_items.configitem_templates.weapons.BowConfigItem;
+import com.robertx22.config.non_mine_items.configitem_templates.weapons.SwordConfigItem;
 
 import mod.azure.dmcweapons.proxy.CommonProxy;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -59,12 +60,7 @@ public class DMCWeaponsMod {
     public void postInit(FMLPostInitializationEvent e) {
         proxy.postInit();
         if(Loader.isModLoaded("mmorpg")) {
-        	MineAndSlashAPI.addCompatibleItem("dmcweapons:devilsworddante", new SwordConfigItem());
-            MineAndSlashAPI.addCompatibleItem("dmcweapons:rebellion", new SwordConfigItem());
-            MineAndSlashAPI.addCompatibleItem("dmcweapons:redqueen", new SwordConfigItem());
-            MineAndSlashAPI.addCompatibleItem("dmcweapons:spada", new SwordConfigItem());
-            MineAndSlashAPI.addCompatibleItem("dmcweapons:yamato", new SwordConfigItem());
-            MineAndSlashAPI.addCompatibleItem("dmcweapons:coyote-a", new BowConfigItem());
-		}
+        	MMORPGHandler.registerMMORPG();
+        }
     }  
 }
