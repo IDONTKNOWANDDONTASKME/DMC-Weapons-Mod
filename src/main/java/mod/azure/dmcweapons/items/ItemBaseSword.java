@@ -1,8 +1,8 @@
 package mod.azure.dmcweapons.items;
 
-import mod.azure.dmcweapons.IMultiType;
 import mod.azure.dmcweapons.DMCWeaponsMod;
 import mod.azure.dmcweapons.proxy.CommonProxy;
+import mod.azure.dmcweapons.util.IMultiType;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

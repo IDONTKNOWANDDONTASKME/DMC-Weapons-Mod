@@ -1,4 +1,4 @@
-package mod.azure.dmcweapons;
+package mod.azure.dmcweapons.util;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

@@ -1,4 +1,4 @@
-package mod.azure.dmcweapons;
+package mod.azure.dmcweapons.util;
 
 import com.robertx22.api.MineAndSlashAPI;
 import com.robertx22.config.non_mine_items.ConfigItem;
@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.Loader;
 
 public class MMORPGHandler {
 
-	public static void registerMMORPG() {
+	public MMORPGHandler() {
 		MineAndSlashAPI.addCompatibleItem("dmcweapons:devilsworddante", new ConfigItem().setType(new Sword()));
 		MineAndSlashAPI.addCompatibleItem("dmcweapons:rebellion", new ConfigItem().setType(new Sword()));
 		MineAndSlashAPI.addCompatibleItem("dmcweapons:redqueen", new ConfigItem().setType(new Sword()));

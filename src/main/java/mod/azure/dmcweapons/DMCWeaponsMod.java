@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mod.azure.dmcweapons.proxy.CommonProxy;
+import mod.azure.dmcweapons.util.LootHandler;
+import mod.azure.dmcweapons.util.MMORPGHandler;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -27,12 +29,13 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.registries.IForgeRegistry;
 
-@Mod(modid = DMCWeaponsMod.modid, version = DMCWeaponsMod.version, dependencies = "after:mmorpg;required-after:forge@[14.23.5.2768,)")
+@Mod(modid = DMCWeaponsMod.modid, version = DMCWeaponsMod.version, dependencies = DMCWeaponsMod.dependencies)
 public class DMCWeaponsMod {
 
 	public static final String modid = "dmcweapons";
 	public static final String MODNAME = "Devil May Cry Weapons";
-	public static final String version = "1.0.6";
+	public static final String version = "1.0.7";
+	public static final String dependencies = "required-after:ebwizardry;after:mmorpg";
 	
 	@SidedProxy(clientSide = "mod.azure.dmcweapons.proxy.ClientProxy", serverSide = "mod.azure.dmcweapons.proxy.CommonProxy")
     public static CommonProxy proxy;
@@ -50,13 +53,14 @@ public class DMCWeaponsMod {
 	@Mod.EventHandler
     public void init(FMLInitializationEvent e) {
         proxy.init();
+        MinecraftForge.EVENT_BUS.register(new LootHandler());
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent e) {
         proxy.postInit();
         if(Loader.isModLoaded("mmorpg")) {
-        	MMORPGHandler.registerMMORPG();
+        	MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
         }
     }  
 }
