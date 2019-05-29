@@ -1,13 +1,13 @@
 {
     "forge_marker": 1,
-	
     "variants": {
-        "type": {
-    	  "1": {
-    		   "model": "dmcweapons:devilsworddante.obj"
-    		}
-        }
-	},
+        "normal": [ { } ],
+        "inventory": [
+            {
+               "model": "dmcweapons:devilsworddante.obj"
+            }
+        ]
+    },
 	"defaults" : {
 	
 	"transform": {

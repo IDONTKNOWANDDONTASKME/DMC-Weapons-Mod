@@ -1,10 +1,8 @@
 package mod.azure.dmcweapons.proxy;
 
 import mod.azure.dmcweapons.DMCWeaponsMod;
-import mod.azure.dmcweapons.util.IMultiType;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.model.obj.OBJLoader;
@@ -34,10 +32,9 @@ public class ClientProxy extends CommonProxy {
 	}
 	
 	@SubscribeEvent
-	public static void registerModels(ModelRegistryEvent e) {
-		for (ItemStack variant : variantList) {
-			Item item = variant.getItem();
-			ModelLoader.setCustomModelResourceLocation(item, variant.getItemDamage(), new ModelResourceLocation(item.getRegistryName(), String.format("type=%d", ((IMultiType) item).getType(variant))));
+	public static void registerModels(ModelRegistryEvent event) {
+		for (Item item : itemList) {
+			ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 		}
 	}
 }

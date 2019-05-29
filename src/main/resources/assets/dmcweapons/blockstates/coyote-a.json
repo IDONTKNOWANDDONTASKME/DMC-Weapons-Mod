@@ -1,12 +1,13 @@
 {
     "forge_marker": 1,
     "variants": {
-    "type": {
-		"1": {
-			   "model": "dmcweapons:coyote-a.obj"
-			}
-    }
-	},
+        "normal": [ { } ],
+        "inventory": [
+            {
+               "model": "dmcweapons:coyote-a.obj"
+            }
+        ]
+    },
 	"defaults" : {
 	
 	"transform": {

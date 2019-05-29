@@ -48,12 +48,12 @@ public class CommonProxy {
 	}
 	
 	public static Item[] itemList = new Item[] {
-			new ItemBaseSword("devilsworddante", 1),
-			new ItemBaseSword("rebellion", 1),
-			new ItemBaseSword("redqueen", 1),
-			new ItemBaseSword("yamato", 1),
-			new ItemBaseSword("spada", 1),
-			new ItemBaseGun("coyote-a", 1)
+			new ItemBaseSword("devilsworddante", 9),
+			new ItemBaseSword("rebellion", 9),
+			new ItemBaseSword("redqueen", 9),
+			new ItemBaseSword("yamato", 9),
+			new ItemBaseSword("spada", 9),
+			new ItemBaseGun("coyote-a")
 		    };
 		    public static NonNullList<ItemStack> variantList;
 }

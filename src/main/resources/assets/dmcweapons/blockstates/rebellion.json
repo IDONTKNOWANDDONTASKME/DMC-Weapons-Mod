@@ -1,13 +1,13 @@
 {
     "forge_marker": 1,
-	
     "variants": {
-        "type": {
-    	  "1": {
-    		   "model": "dmcweapons:rebellion.obj"
-    		}
-        }
-	},
+        "normal": [ { } ],
+        "inventory": [
+            {
+               "model": "dmcweapons:rebellion.obj"
+            }
+        ]
+    },
 	"defaults" : {
 	
 	"transform": {
