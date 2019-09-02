@@ -1,4 +1,4 @@
-package mod.azure.dmcweapons.items;
+package mod.azure.dmcweapons.items.defaultweapons;
 
 import mod.azure.dmcweapons.DMCWeaponsMod;
 import net.minecraft.creativetab.CreativeTabs;
