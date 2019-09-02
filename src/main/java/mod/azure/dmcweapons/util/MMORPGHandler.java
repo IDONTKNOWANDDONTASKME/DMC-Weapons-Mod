@@ -16,6 +16,6 @@ public class MMORPGHandler {
 		MineAndSlashAPI.addCompatibleItem("dmcweapons:redqueen", new ConfigItem().setType(new Sword()));
 		MineAndSlashAPI.addCompatibleItem("dmcweapons:yamato", new ConfigItem().setType(new Sword()));
 		MineAndSlashAPI.addCompatibleItem("dmcweapons:spada", new ConfigItem().setType(new Sword()));
-		MineAndSlashAPI.addCompatibleItem("dmcweapons:coyote-ay", new ConfigItem().setType(new Bow()));
+		MineAndSlashAPI.addCompatibleItem("dmcweapons:coyote-a", new ConfigItem().setType(new Bow()));
 	}
 }
