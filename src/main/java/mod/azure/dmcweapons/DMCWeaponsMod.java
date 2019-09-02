@@ -22,7 +22,7 @@ public class DMCWeaponsMod {
 
 	public static final String modid = "dmcweapons";
 	public static final String MODNAME = "Devil May Cry Weapons";
-	public static final String version = "1.0.8";
+	public static final String version = "1.0.9";
 	public static final String dependencies = "required-after:mmorpg";
 	
 	@SidedProxy(clientSide = "mod.azure.dmcweapons.proxy.ClientProxy", serverSide = "mod.azure.dmcweapons.proxy.CommonProxy")
