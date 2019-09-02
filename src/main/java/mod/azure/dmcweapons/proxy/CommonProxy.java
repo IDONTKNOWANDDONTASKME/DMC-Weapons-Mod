@@ -1,8 +1,9 @@
 package mod.azure.dmcweapons.proxy;
 
 import mod.azure.dmcweapons.DMCWeaponsMod;
-import mod.azure.dmcweapons.items.ItemBaseGun;
-import mod.azure.dmcweapons.items.ItemBaseSword;
+import mod.azure.dmcweapons.items.defaultweapons.ItemBaseGun;
+import mod.azure.dmcweapons.items.defaultweapons.ItemBaseSword;
+import mod.azure.dmcweapons.util.Register;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -36,24 +37,14 @@ public class CommonProxy {
     	public static void registerItems(RegistryEvent.Register<Item> event) {
     		IForgeRegistry<Item> registry = event.getRegistry();
     		
-    		for (Item item : itemList) {
+    		for (Item item : Register.itemList) {
     			registry.register(item);
     		}
     		
-    		variantList = NonNullList.create();
-    		for (Item item : itemList) {
-    			item.getSubItems(DMCWeaponsMod.tab, variantList);
+    		Register.variantList = NonNullList.create();
+    		for (Item item : Register.itemList) {
+    			item.getSubItems(DMCWeaponsMod.tab, Register.variantList);
     		}
     	}
 	}
-	
-	public static Item[] itemList = new Item[] {
-			new ItemBaseSword("devilsworddante", 9),
-			new ItemBaseSword("rebellion", 9),
-			new ItemBaseSword("redqueen", 9),
-			new ItemBaseSword("yamato", 9),
-			new ItemBaseSword("spada", 9),
-			new ItemBaseGun("coyote-a")
-		    };
-		    public static NonNullList<ItemStack> variantList;
 }

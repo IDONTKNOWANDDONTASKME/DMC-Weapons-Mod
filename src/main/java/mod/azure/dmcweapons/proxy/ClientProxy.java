@@ -1,6 +1,7 @@
 package mod.azure.dmcweapons.proxy;
 
 import mod.azure.dmcweapons.DMCWeaponsMod;
+import mod.azure.dmcweapons.util.Register;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -33,7 +34,7 @@ public class ClientProxy extends CommonProxy {
 	
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
-		for (Item item : itemList) {
+		for (Item item : Register.itemList) {
 			ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 		}
 	}
