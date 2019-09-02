@@ -27,7 +27,6 @@ public class Register {
 		items.add(new ItemBaseSword("redqueen", 9));
 		items.add(new ItemBaseSword("yamato", 9));
 		items.add(new ItemBaseSword("spada", 9));
-		items.add(new ItemBaseGun("coyote-a"));
 		LOGGER.debug("Registered Normal Items");
 		if (Loader.isModLoaded("mmorpg")) {
 			items.add(new MSBow("coyote-a"));
