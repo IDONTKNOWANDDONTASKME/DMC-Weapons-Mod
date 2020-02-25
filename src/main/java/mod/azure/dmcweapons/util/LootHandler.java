@@ -1,38 +1,18 @@
 package mod.azure.dmcweapons.util;
 
-import java.util.List;
-
-import com.google.common.collect.ImmutableList;
-
 import mod.azure.dmcweapons.DMCWeaponsMod;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.LootEntry;
-import net.minecraft.world.storage.loot.LootEntryTable;
 import net.minecraft.world.storage.loot.LootPool;
-import net.minecraft.world.storage.loot.LootTableList;
-import net.minecraft.world.storage.loot.RandomValueRange;
-import net.minecraft.world.storage.loot.conditions.LootCondition;
+import net.minecraft.world.storage.loot.TableLootEntry;
 import net.minecraftforge.event.LootTableLoadEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 
+@Mod.EventBusSubscriber(modid = DMCWeaponsMod.MODID)
 public class LootHandler {
-	private static final List<String> TABLES = ImmutableList.of(
-			"inject/abandoned_mineshaft", "inject/desert_pyramid",
-			"inject/jungle_temple", "inject/simple_dungeon",
-			"inject/stronghold_crossing", "inject/stronghold_corridor",
-			"inject/stronghold_library", "underwater_ruin_big",
-			"inject/underwater_ruin_small", "inject/village_blacksmith"
-			);
-
-	public LootHandler() {
-		for (String s : TABLES) {
-			LootTableList.register(new ResourceLocation(DMCWeaponsMod.modid, s));
-		}
-
-	}
-
 	@SubscribeEvent
-	public void lootLoad(LootTableLoadEvent evt) {
+	public static void lootLoad(LootTableLoadEvent evt) {
 		String prefix = "minecraft:chests/";
 		String name = evt.getName().toString();
 
@@ -43,23 +23,31 @@ public class LootHandler {
 			case "desert_pyramid":
 			case "jungle_temple":
 			case "simple_dungeon":
-			case "stronghold_crossing":
+			case "spawn_bonus_chest":
 			case "stronghold_corridor":
-			case "stronghold_library":
-			case "underwater_ruin_big":
+			case "village_blacksmith":
+			case "end_city_treasure":
+			case "stronghold_crossing":
 			case "underwater_ruin_small":
-			case "village_blacksmith": evt.getTable().addPool(getInjectPool(file)); break;
-			default: break;
+			case "underwater_ruin_big":
+			case "buried_treasure":
+			case "shipwreck_treasure":
+			case "pillager_outpost":
+				evt.getTable().addPool(getInjectPool(file));
+				break;
+			default:
+				break;
 			}
 		}
 	}
 
-	private LootPool getInjectPool(String entryName) {
-		return new LootPool(new LootEntry[] { getInjectEntry(entryName, 1) }, new LootCondition[0], new RandomValueRange(1), new RandomValueRange(0, 1), "dmcweapons_inject_pool");
+	private static LootPool getInjectPool(String entryName) {
+		return LootPool.builder().addEntry(getInjectEntry(entryName, 1)).bonusRolls(0, 1).name("wow_inject").build();
 	}
 
-	private LootEntryTable getInjectEntry(String name, int weight) {
-		return new LootEntryTable(new ResourceLocation(DMCWeaponsMod.modid, "inject/" + name), weight, 0, new LootCondition[0], "dmcweapons_inject_entry");
+	@SuppressWarnings("rawtypes")
+	private static LootEntry.Builder getInjectEntry(String name, int weight) {
+		ResourceLocation table = new ResourceLocation(DMCWeaponsMod.MODID, "inject/" + name);
+		return TableLootEntry.builder(table).weight(weight);
 	}
-
 }

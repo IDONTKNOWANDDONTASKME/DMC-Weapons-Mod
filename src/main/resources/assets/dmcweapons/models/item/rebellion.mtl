@@ -1,14 +1,8 @@
 # Blender MTL File: 'None'
-# Material Count: 2
+# Material Count: 1
 
-newmtl 材質0.002
-Ka 1.000000 1.000000 1.000000
-Kd 0.602353 0.602353 0.602353
+newmtl 24_Material57_1_0_0
+Kd 1.000000 1.000000 1.000000
 d 1.000000
-map_Kd dmcweapons:items/rebellion
-
-newmtl 材質1.002
-Ka 1.000000 1.000000 1.000000
-Kd 0.602353 0.602353 0.602353
-d 1.000000
+illum 1
 map_Kd dmcweapons:items/rebellion

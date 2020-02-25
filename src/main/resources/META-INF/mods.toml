@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+issueTrackerURL="https://github.com/AzureDoom/DMC-Weapons-Mod/issues"
+[[mods]]
+modId="dmcweapons"
+version="${file.jarVersion}"
+displayName="DMC Weapons Mod"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/devil-may-cry-weapons"
+logoFile="logo.png"
+authors="AzureDoomC"
+description='''
+Adds Devil May Cry Weapons into Minecraft
+'''

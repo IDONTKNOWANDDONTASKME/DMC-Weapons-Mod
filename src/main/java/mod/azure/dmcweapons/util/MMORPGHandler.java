@@ -1,21 +1,15 @@
 package mod.azure.dmcweapons.util;
 
-import com.robertx22.api.MineAndSlashAPI;
-import com.robertx22.config.non_mine_items.ConfigItem;
-import com.robertx22.database.gearitemslots.Bow;
-import com.robertx22.database.gearitemslots.Staff;
-import com.robertx22.database.gearitemslots.Sword;
+import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
+import com.robertx22.mine_and_slash.config.compatible_items.ConfigItem;
+import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Sword;
 
-import net.minecraftforge.fml.common.Loader;
+import mod.azure.dmcweapons.config.Config;
 
 public class MMORPGHandler {
 
 	public MMORPGHandler() {
-		MineAndSlashAPI.addCompatibleItem("dmcweapons:devilsworddante", new ConfigItem().setType(new Sword()));
-		MineAndSlashAPI.addCompatibleItem("dmcweapons:rebellion", new ConfigItem().setType(new Sword()));
-		MineAndSlashAPI.addCompatibleItem("dmcweapons:redqueen", new ConfigItem().setType(new Sword()));
-		MineAndSlashAPI.addCompatibleItem("dmcweapons:yamato", new ConfigItem().setType(new Sword()));
-		MineAndSlashAPI.addCompatibleItem("dmcweapons:spada", new ConfigItem().setType(new Sword()));
-		MineAndSlashAPI.addCompatibleItem("dmcweapons:coyote-a", new ConfigItem().setType(new Bow()));
+		MineAndSlashAPI.addCompatibleItem("dmcweapons:rebellion", new ConfigItem().setType(Sword.INSTANCE)
+				.setSalvagable(true).setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get()));
 	}
 }
