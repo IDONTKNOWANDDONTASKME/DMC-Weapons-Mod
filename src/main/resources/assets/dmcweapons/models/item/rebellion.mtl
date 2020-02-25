@@ -1,7 +1,7 @@
 # Blender MTL File: 'None'
 # Material Count: 1
 
-newmtl 24_Material57_1_0_0
+newmtl Mat1
 Kd 1.000000 1.000000 1.000000
 d 1.000000
 illum 1
