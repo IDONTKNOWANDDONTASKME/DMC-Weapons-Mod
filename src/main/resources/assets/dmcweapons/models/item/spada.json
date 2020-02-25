@@ -1,32 +1,32 @@
 {
     "parent": "forge:item/default",
 	"loader": "forge:obj",
-	"model": "dothack:models/item/dualgunner/dualgunner00.obj",
+	"model": "dmcweapons:models/item/spada.obj",
 	"display" : {
     	"thirdperson_righthand": {
             	"rotation": [ 0, 188, 0 ],
-            	"translation": [ -8.60, 7.50, -6.60 ],
+            	"translation": [ -8.60, 2.0, -5.7 ],
             	"scale": [ 1.00, 1.00, 1.00 ]
         	},
         	"thirdperson_lefthand": {
         		"rotation": [ 0, 188, 0 ],
-        		"translation": [ 7.10, 7.50, -9.00 ],
-        		"scale": [ 1.00, 1.00, 1.00 ]
+        		"translation": [ 6.30, 2.0, -7.7 ],
+            	"scale": [ 1.00, 1.00, 1.00 ]
         	},
         	"firstperson_righthand": {
         		"rotation": [ 0, 190, 0 ],
-        		"translation": [ 0.30, 0.20, -260.50 ],
-        		"scale": [ 10.00, 10.00, 10.00 ]
+        		"translation": [ -9.70, 0.20, -0.50 ],
+        		"scale": [ 0.90, 0.90, 0.90 ]
         	},
         	"firstperson_lefthand": {
         		"rotation": [ 0, 190, 0 ],
-        		"translation": [ 60.30, 0.20, -260.50 ],
-        		"scale": [ 10.00, 10.00, 10.00 ]
+        		"translation": [ 0.30, 0.20, -0.50 ],
+        		"scale": [ 0.90, 0.90, 0.90 ]
         	},
         	"gui": {
         		"rotation": [ 96, 50, 216 ],
-        		"translation": [ 10.00, -6.00, 0.00 ],
-        		"scale": [ 1.90, 1.90, 1.90 ]
+        		"translation": [ 0.10, -15.00, 0.00 ],
+        		"scale": [ 1.20, 1.20, 1.20 ]
         	},
         	"head": {
         		"rotation": [ 0, 0, 0 ],
@@ -35,12 +35,12 @@
         	},
         	"fixed": {
         		"rotation": [ 0, 90, 0 ],
-        		"translation": [ 14.00, 20.00, -17.00 ],
-        		"scale": [ 1.90, 1.90, 1.90 ]
+        		"translation": [ 5.50, -4.50, -5.00 ],
+        		"scale": [ 0.7, 0.7, 0.7 ]
         	},
         	"ground": {
         		"rotation": [ 0, 0, 0 ],
-        		"translation": [ 10.00, 16.00, 5.00 ],
+        		"translation": [ 10.00, 2.00, 5.00 ],
         		"scale": [ 1.00, 1.00, 1.00 ]
         	}
 	}

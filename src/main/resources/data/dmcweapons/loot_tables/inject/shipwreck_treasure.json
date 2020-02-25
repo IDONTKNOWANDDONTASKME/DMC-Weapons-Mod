@@ -9,10 +9,25 @@
                     "weight": 1,
                     "name": "dmcweapons:rebellion"
                 },
-				{
+                {
                     "type": "item",
                     "weight": 1,
-                    "name": "dmcweapons:rebellion"
+                    "name": "dmcweapons:redqueen"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dmcweapons:yamato"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dmcweapons:spada"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dmcweapons:coyote-a"
                 }
             ]
         }

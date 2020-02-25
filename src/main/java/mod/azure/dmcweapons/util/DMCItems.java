@@ -2,6 +2,7 @@ package mod.azure.dmcweapons.util;
 
 import mod.azure.dmcweapons.DMCWeaponsMod;
 import mod.azure.dmcweapons.config.Config;
+import net.minecraft.item.BowItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemTier;
 import net.minecraft.item.SwordItem;
@@ -17,11 +18,24 @@ public class DMCItems {
 	public static class RegistryEvents {
 		@SubscribeEvent
 		public static void registerItems(final RegistryEvent.Register<Item> event) {
-			event.getRegistry()
-					.registerAll(rebellion = new SwordItem(ItemTier.DIAMOND, 4, 6.0f,
+			event.getRegistry().registerAll(
+					new BowItem(new Item.Properties().group(DMCTabs.DMCItemGroup)
+							.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("coyote-a")),
+					rebellion = new SwordItem(ItemTier.DIAMOND, 4, 6.0f,
 							new Item.Properties().group(DMCTabs.DMCItemGroup)
 									.maxDamage(Config.SERVER.SWORD_MAXDAMAGE.get()))
-											.setRegistryName(location("rebellion")));
+											.setRegistryName(location("rebellion")),
+					new SwordItem(ItemTier.DIAMOND, 4, 6.0f,
+							new Item.Properties().group(DMCTabs.DMCItemGroup)
+									.maxDamage(Config.SERVER.SWORD_MAXDAMAGE.get()))
+											.setRegistryName(location("redqueen")),
+					new SwordItem(ItemTier.DIAMOND, 4, 6.0f,
+							new Item.Properties().group(DMCTabs.DMCItemGroup)
+									.maxDamage(Config.SERVER.SWORD_MAXDAMAGE.get())).setRegistryName(location("spada")),
+					new SwordItem(ItemTier.DIAMOND, 4, 6.0f,
+							new Item.Properties().group(DMCTabs.DMCItemGroup)
+									.maxDamage(Config.SERVER.SWORD_MAXDAMAGE.get()))
+											.setRegistryName(location("yamato")));
 		}
 
 		public static ResourceLocation location(String name) {

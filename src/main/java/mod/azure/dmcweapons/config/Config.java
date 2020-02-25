@@ -28,6 +28,7 @@ public class Config {
 		public final BooleanValue USE_CHESTLOOTSYSTEM;
 		public final BooleanValue USE_MINESLASHLOOTSYSTEM;
 		public ConfigValue<Integer> SWORD_MAXDAMAGE;
+		public ConfigValue<Integer> BOW_MAXDAMAGE;
 
 		ServerConfig(ForgeConfigSpec.Builder builder) {
 			builder.push("general");
@@ -44,6 +45,8 @@ public class Config {
 			builder.push("gear");
 			SWORD_MAXDAMAGE = builder.comment("Sword Max Damage")
 					.translation(DMCWeaponsMod.MODID + ".config.sword_maxdamage").define("SWORD_MAXDAMAGE", 1000);
+			BOW_MAXDAMAGE = builder.comment("Bow Max Damage").translation(DMCWeaponsMod.MODID + ".config.bow_maxdamage")
+					.define("BOW_MAXDAMAGE", 1000);
 			builder.pop();
 		}
 	}
