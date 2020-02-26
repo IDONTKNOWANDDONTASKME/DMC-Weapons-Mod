@@ -1,26 +1,22 @@
 # Blender MTL File: 'None'
 # Material Count: 4
 
-newmtl 材質0.001
-Ka 1.000000 1.000000 1.000000
-Kd 0.602353 0.602353 0.602353
+newmtl mat0
+Kd 1.000000 1.000000 1.000000
 d 1.000000
 map_Kd dmcweapons:items/dante
 
-newmtl 材質1.001
-Ka 1.000000 1.000000 1.000000
-Kd 0.602353 0.602353 0.602353
+newmtl mat1
+Kd 1.000000 1.000000 1.000000
 d 1.000000
 map_Kd dmcweapons:items/dante
 
-newmtl 材質2
-Ka 1.000000 1.000000 1.000000
-Kd 0.602353 0.602353 0.602353
+newmtl mat2
+Kd 1.000000 1.000000 1.000000
 d 1.000000
 map_Kd dmcweapons:items/dante
 
-newmtl 材質3
-Ka 1.000000 1.000000 1.000000
-Kd 0.602353 0.602353 0.602353
+newmtl mat3
+Kd 1.000000 1.000000 1.000000
 d 1.000000
 map_Kd dmcweapons:items/dante

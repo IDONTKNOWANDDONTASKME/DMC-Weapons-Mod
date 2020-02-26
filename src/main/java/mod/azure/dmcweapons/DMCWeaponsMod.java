@@ -1,34 +1,29 @@
 package mod.azure.dmcweapons;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-import mod.azure.dmcweapons.proxy.CommonProxy;
+import mod.azure.dmcweapons.config.ModConfig;
+import mod.azure.dmcweapons.proxy.IProxy;
 import mod.azure.dmcweapons.util.LootHandler;
-import mod.azure.dmcweapons.util.MMORPGHandler;
-import net.minecraft.creativetab.CreativeTabs;
+import mod.azure.dmcweapons.util.MineSlashHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = DMCWeaponsMod.modid, version = DMCWeaponsMod.version, dependencies = DMCWeaponsMod.dependencies)
+@Mod(modid = DMCWeaponsMod.MODID)
 public class DMCWeaponsMod {
 
-	public static final String modid = "dmcweapons";
+	public static final String MODID = "dmcweapons";
 	public static final String MODNAME = "Devil May Cry Weapons";
-	public static final String version = "1.0.9";
-	public static final String dependencies = "required-after:mmorpg";
-	
-	@SidedProxy(clientSide = "mod.azure.dmcweapons.proxy.ClientProxy", serverSide = "mod.azure.dmcweapons.proxy.CommonProxy")
-    public static CommonProxy proxy;
+	public static final Logger LOGGER = LogManager.getLogger();
 
-	public static CreativeTabs tab = new Tab(modid);
+	@SidedProxy(clientSide = "mod.azure.dmcweapons.proxy.ClientProxy", serverSide = "mod.azure.dmcweapons.proxy.ServerProxy")
+	public static IProxy proxy;
 
 	@Mod.Instance
 	public static DMCWeaponsMod instance;
@@ -37,18 +32,18 @@ public class DMCWeaponsMod {
 	public void preInit(FMLPreInitializationEvent e) {
 		proxy.preInit();
 	}
-	
-	@Mod.EventHandler
-    public void init(FMLInitializationEvent e) {
-        proxy.init();
-        MinecraftForge.EVENT_BUS.register(new LootHandler());
-    }
 
-    @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent e) {
-        proxy.postInit();
-        if(Loader.isModLoaded("mmorpg")) {
-        	MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
-        }
-    }  
+	@Mod.EventHandler
+	public void init(FMLInitializationEvent e) {
+		proxy.init();
+		MinecraftForge.EVENT_BUS.register(new LootHandler());
+	}
+
+	@Mod.EventHandler
+	public void postInit(FMLPostInitializationEvent e) {
+		proxy.postInit();
+		if (Loader.isModLoaded("mmorpg") && ModConfig.USE_COMPATIBILITY_ITEMS) {
+			MinecraftForge.EVENT_BUS.register(new MineSlashHandler());
+		}
+	}
 }
