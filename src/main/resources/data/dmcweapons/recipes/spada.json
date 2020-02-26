@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "dmcweapons:spada"
+  },
+  "pattern": [
+    " d ",
+    " d ",
+    " e "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "d": {
+      "item": "minecraft:netherbrick"
+    },
+	"e": {
+      "item": "minecraft:stick"
+    }
+  }
+}

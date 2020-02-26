@@ -18,7 +18,13 @@ public class MMORPGHandler {
 				.setSalvagable(true).setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get()));
 		MineAndSlashAPI.addCompatibleItem("dmcweapons:yamato", new ConfigItem().setType(Sword.INSTANCE)
 				.setSalvagable(true).setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get()));
+		MineAndSlashAPI.addCompatibleItem("dmcweapons:devilsworddante", new ConfigItem().setType(Sword.INSTANCE)
+				.setSalvagable(true).setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get()));
 		MineAndSlashAPI.addCompatibleItem("dmcweapons:coyote-a", new ConfigItem().setType(Bow.INSTANCE)
 				.setSalvagable(true).setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get()));
+		MineAndSlashAPI.addCompatibleItem("dmcweapons:ivory", new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true)
+				.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get()));
+		MineAndSlashAPI.addCompatibleItem("dmcweapons:ebony", new ConfigItem().setType(Bow.INSTANCE).setSalvagable(true)
+				.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get()));
 	}
 }

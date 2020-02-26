@@ -28,6 +28,21 @@
                     "type": "item",
                     "weight": 1,
                     "name": "dmcweapons:coyote-a"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dmcweapons:devilsworddante"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dmcweapons:ivory"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dmcweapons:ebony"
                 }
             ]
         }

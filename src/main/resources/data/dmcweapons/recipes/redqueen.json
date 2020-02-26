@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "dmcweapons:redqueen"
+  },
+  "pattern": [
+    " d ",
+    " d ",
+    " e "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "d": {
+      "item": "minecraft:gold_nugget"
+    },
+	"e": {
+      "item": "minecraft:stick"
+    }
+  }
+}

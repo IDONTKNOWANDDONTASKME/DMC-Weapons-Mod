@@ -1,0 +1,22 @@
+{
+  "result": {
+    "item": "dmcweapons:ebony"
+  },
+  "pattern": [
+    "   ",
+    "add",
+    "  e"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+	"d": {
+      "item": "minecraft:iron_nugget"
+    },
+	"e": {
+      "item": "minecraft:stick"
+    },
+    "a": {
+      "item": "minecraft:nether_brick"
+    }
+  }
+}

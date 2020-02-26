@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "dmcweapons:rebellion"
+  },
+  "pattern": [
+    " d ",
+    " d ",
+    " e "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "d": {
+      "item": "minecraft:emerald"
+    },
+	"e": {
+      "item": "minecraft:stick"
+    }
+  }
+}

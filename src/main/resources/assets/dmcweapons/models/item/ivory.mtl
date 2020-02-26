@@ -1,0 +1,32 @@
+# Blender MTL File: 'None'
+# Material Count: 6
+
+newmtl mat1
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dmcweapons:items/ivory
+
+newmtl mat2
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dmcweapons:items/ivory
+
+newmtl mat3
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dmcweapons:items/ivory
+
+newmtl mat4
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dmcweapons:items/ivory
+
+newmtl mat5
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dmcweapons:items/ivory
+
+newmtl mat6
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dmcweapons:items/ivory

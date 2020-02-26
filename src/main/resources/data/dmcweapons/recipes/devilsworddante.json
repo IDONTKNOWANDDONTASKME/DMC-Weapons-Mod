@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "dmcweapons:devilsworddante"
+  },
+  "pattern": [
+    " d ",
+    " d ",
+    " e "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "d": {
+      "item": "minecraft:nether_star"
+    },
+	"e": {
+      "item": "minecraft:stick"
+    }
+  }
+}

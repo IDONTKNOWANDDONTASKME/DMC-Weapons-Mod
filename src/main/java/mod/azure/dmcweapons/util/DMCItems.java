@@ -21,6 +21,10 @@ public class DMCItems {
 			event.getRegistry().registerAll(
 					new BowItem(new Item.Properties().group(DMCTabs.DMCItemGroup)
 							.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("coyote-a")),
+					new BowItem(new Item.Properties().group(DMCTabs.DMCItemGroup)
+							.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("ivory")),
+					new BowItem(new Item.Properties().group(DMCTabs.DMCItemGroup)
+							.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("ebony")),
 					rebellion = new SwordItem(ItemTier.DIAMOND, 4, 6.0f,
 							new Item.Properties().group(DMCTabs.DMCItemGroup)
 									.maxDamage(Config.SERVER.SWORD_MAXDAMAGE.get()))
@@ -32,6 +36,10 @@ public class DMCItems {
 					new SwordItem(ItemTier.DIAMOND, 4, 6.0f,
 							new Item.Properties().group(DMCTabs.DMCItemGroup)
 									.maxDamage(Config.SERVER.SWORD_MAXDAMAGE.get())).setRegistryName(location("spada")),
+					new SwordItem(ItemTier.DIAMOND, 4, 6.0f,
+							new Item.Properties().group(DMCTabs.DMCItemGroup)
+									.maxDamage(Config.SERVER.SWORD_MAXDAMAGE.get()))
+											.setRegistryName(location("devilsworddante")),
 					new SwordItem(ItemTier.DIAMOND, 4, 6.0f,
 							new Item.Properties().group(DMCTabs.DMCItemGroup)
 									.maxDamage(Config.SERVER.SWORD_MAXDAMAGE.get()))
