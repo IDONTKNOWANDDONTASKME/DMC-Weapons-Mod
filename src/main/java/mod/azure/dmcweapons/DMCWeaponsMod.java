@@ -16,7 +16,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
 
@@ -31,7 +30,6 @@ public class DMCWeaponsMod {
 		ModLoadingContext modLoadingContext = ModLoadingContext.get();
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		modEventBus.addListener(this::setup);
-		modEventBus.addListener(this::enqueueIMC);
 		modLoadingContext.registerConfig(ModConfig.Type.SERVER, Config.SERVER_SPEC, "dmcweapons-config.toml");
 		Config.loadConfig(Config.SERVER_SPEC, FMLPaths.CONFIGDIR.get().resolve("dmcweapons-config.toml").toString());
 	}
@@ -42,19 +40,15 @@ public class DMCWeaponsMod {
 		}
 	}
 
-	private void enqueueIMC(final InterModProcessEvent event) {
-		if (ModList.get().isLoaded("mmorpg") && Config.SERVER.USE_COMPATIBILITY_ON_ITEMS.get()) {
-			// MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
-		}
-	}
-
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	public static class GatherDataSubscriber {
 		@SubscribeEvent
 		public static void gatherData(GatherDataEvent event) {
 			DataGenerator gen = event.getGenerator();
 			if (event.includeServer()) {
-				gen.addProvider(new MMORPGHandler().getDataPackCreator(gen));
+				if (ModList.get().isLoaded("mmorpg") && Config.SERVER.USE_COMPATIBILITY_ON_ITEMS.get()) {
+					gen.addProvider(new MMORPGHandler().getDataPackCreator(gen));
+				}
 			}
 		}
 	}

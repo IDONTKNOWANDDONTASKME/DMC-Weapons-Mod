@@ -39,12 +39,12 @@ public class MMORPGHandler {
 			for (int type = 1; type <= 1; type++)
 				switch (type) {
 				case 1:
-					for (String name : SWORDS) {
+					for (String sword : SWORDS) {
 						OldConfigItem config = new OldConfigItem().setGenerationWeights(1000, 200, 0).setMaxRarity(5)
 								.setMinRarity(0).setSalvagable(true).setType(Sword.INSTANCE)
 								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
 
-						String id = name;
+						String id = sword;
 
 						CompatibleItem neww = config.convertToNewFormat();
 						neww.guid = id;
@@ -53,19 +53,18 @@ public class MMORPGHandler {
 						items.add(neww);
 					}
 				case 2:
-					for (String name : GUNS) {
+					for (String gun : GUNS) {
 						OldConfigItem bowconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0).setMaxRarity(5)
 								.setMinRarity(0).setSalvagable(true).setType(Bow.INSTANCE)
 								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
 
-						String id2 = name;
+						String id2 = gun;
 
 						CompatibleItem bow = bowconfig.convertToNewFormat();
 						bow.guid = id2;
 						bow.item_id = id2;
 
 						items.add(bow);
-						break;
 					}
 				}
 		} catch (Exception e) {
