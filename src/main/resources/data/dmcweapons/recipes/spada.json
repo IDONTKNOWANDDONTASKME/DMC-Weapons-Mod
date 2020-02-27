@@ -10,7 +10,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "d": {
-      "item": "minecraft:netherbrick"
+      "item": "minecraft:nether_brick"
     },
 	"e": {
       "item": "minecraft:stick"
