@@ -1,0 +1,17 @@
+# Blender MTL File: 'None'
+# Material Count: 3
+
+newmtl mat1
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dmcweapons:items/wp01_008_d
+
+newmtl mat2
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dmcweapons:items/wp01_008_d
+
+newmtl mat3
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dmcweapons:items/wp01_008_d

@@ -43,6 +43,16 @@
                     "type": "item",
                     "weight": 1,
                     "name": "dmcweapons:ebony"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dmcweapons:kalinaann1"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dmcweapons:kalinaann2"
                 }
             ]
         }

@@ -20,11 +20,15 @@ public class DMCItems {
 		public static void registerItems(final RegistryEvent.Register<Item> event) {
 			event.getRegistry().registerAll(
 					new BowItem(new Item.Properties().group(DMCTabs.DMCItemGroup)
-							.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("coyote-a")),
+							.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("coyotea")),
 					new BowItem(new Item.Properties().group(DMCTabs.DMCItemGroup)
 							.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("ivory")),
 					new BowItem(new Item.Properties().group(DMCTabs.DMCItemGroup)
 							.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("ebony")),
+					new BowItem(new Item.Properties().group(DMCTabs.DMCItemGroup)
+							.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("kalinaann1")),
+					new BowItem(new Item.Properties().group(DMCTabs.DMCItemGroup)
+							.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("kalinaann2")),
 					rebellion = new SwordItem(ItemTier.DIAMOND, 4, 6.0f,
 							new Item.Properties().group(DMCTabs.DMCItemGroup)
 									.maxDamage(Config.SERVER.SWORD_MAXDAMAGE.get()))
