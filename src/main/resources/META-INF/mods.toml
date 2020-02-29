@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[31,)"
+loaderVersion="[28,)"
 issueTrackerURL="https://github.com/AzureDoom/DMC-Weapons-Mod/issues"
 [[mods]]
 modId="dmcweapons"
@@ -11,3 +11,9 @@ authors="AzureDoomC"
 description='''
 Adds Devil May Cry Weapons into Minecraft
 '''
+[[dependencies.wowweapons]]
+    modId="forge"
+    mandatory=true
+    versionRange="[28.2.2,)"
+    ordering="NONE"
+    side="BOTH"
