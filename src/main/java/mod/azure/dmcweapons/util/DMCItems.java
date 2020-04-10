@@ -25,10 +25,10 @@ public class DMCItems {
 							.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("ivory")),
 					new BowItem(new Item.Properties().group(DMCTabs.DMCItemGroup)
 							.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("ebony")),
-					new BowItem(new Item.Properties().group(DMCTabs.DMCItemGroup)
-							.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("kalinaann1")),
-					new BowItem(new Item.Properties().group(DMCTabs.DMCItemGroup)
-							.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("kalinaann2")),
+					//new BowItem(new Item.Properties().group(DMCTabs.DMCItemGroup)
+							//.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("kalinaann1")),
+					//new BowItem(new Item.Properties().group(DMCTabs.DMCItemGroup)
+							//.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("kalinaann2")),
 					rebellion = new SwordItem(ItemTier.DIAMOND, 4, 6.0f,
 							new Item.Properties().group(DMCTabs.DMCItemGroup)
 									.maxDamage(Config.SERVER.SWORD_MAXDAMAGE.get()))
